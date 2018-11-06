@@ -3,7 +3,7 @@
 	"authors": [
 		"David J. Kordsmeier"
 	],
-	"description": "A simple SHA-3 / Keccak hash function for Dlang, wraps libkeccak C",
+	"description": "A simple SHA-3 / Keccak hash function for Dlang, wraps keccak-tiny C implementation",
 	"copyright": "Copyright © 2018, IoTone, Inc.",
 	"license": "MIT",
 	"targetType": "library",
