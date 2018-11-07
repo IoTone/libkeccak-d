@@ -41,16 +41,6 @@ enum RET
 
 nothrow extern (C)
 {
-    /*
-	int init_mdns_service(const char* name, const char* type, const char *domain, int port, const char* txt);
-	int update_txt_record(const char* txt, int isEventLoopActive);
-	int resolve_mdns_service(int isEventLoopActive);
-	int add_mdns_service(const char* txt, int isEventLoopActive);
-	int create_mdns_service_conn();
-	int release_mdns_service();
-	int sprintf(char *s, const char *format, ...);
-    */
-
     int shake128(uint8_t*, size_t /* bytes */, const uint8_t*, size_t);
     int shake256(uint8_t*, size_t /* bytes */, const uint8_t*, size_t);
 
