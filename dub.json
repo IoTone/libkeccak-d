@@ -10,9 +10,10 @@
 	"dependencies": {
 	},
 	"lflags-osx-x86_64": [
-		"-llibkeccak-tiny"
+		"-L.",
+		"-lkeccak-tiny"
 	],
-	"lflags-posix" : [
+	"lflags-linux" : [
 		"-llibkeccak-tiny"
 	],
 	"lflags-windows-x86_64": [
