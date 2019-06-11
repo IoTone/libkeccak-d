@@ -15,17 +15,23 @@ From NIST: NIST announced the SHA-3 Cryptographic Hash Algorithm Competition on 
 
 Because this D module wraps a C library, you the reader will need to build the library through means available on your platform.  It appears the keecak-tiny library will build with clang, gcc, or probably some other variant not mentioned.
 
-From a posix compliant shell, run sh setup-deps.sh to grab and build keccak-tiny.  On windows you may need to rename your library to keccak-tiny.lib.
+From a posix compliant shell, run sh setup-deps.sh to grab and build keccak-tiny.  
 
-When used in conjunction with TheShellProject, build external deps first with the setup-deps.sh script.  It will handle copying the library into this directory.
+### Windows Notes
+
+Since we don't provide a VS build or a fancy cmake build (that might be a good idea in the future), it is recommended that you use a POSIX shell like a ConEMU or similar to build.  This implies that you will have a Clang or gccc installed as well.  Install it before you get started.
+
+On windows you may need to rename your library to keccak-tiny.lib.
+
+### Building the D library
 
 We recommend a Dlang compiler based on DMD v2.076.1 or later.
 
-dub --compiler=ldc2
+dub build --compiler=ldc2
 
 ## Testing
 
-dub --compiler=ldc2 test
+dub test --compiler=ldc2
 
 ## Examples
 
