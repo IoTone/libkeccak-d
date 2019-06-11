@@ -4,19 +4,19 @@
 		"David J. Kordsmeier"
 	],
 	"description": "A simple SHA-3 / Keccak hash function for Dlang, wraps keccak-tiny C implementation",
-	"copyright": "Copyright © 2018, IoTone, Inc.",
+	"copyright": "Copyright © 2018-2019, IoTone, Inc.",
 	"license": "MIT",
 	"targetType": "library",
 	"dependencies": {
 	},
 	"lflags-osx-x86_64": [
-		"-L."
+		"-L.",
+		"-lkeccak-tiny"
 	],
-	"lflags-posix" : [
-		"-L."
+	"lflags-linux" : [
+		"-llibkeccak-tiny"
 	],
 	"lflags-windows-x86_64": [
-		"-L."
-	],
-    "libs": ["keccak-tiny"]
+		"-llibkeccak-tiny"
+	]
 }
