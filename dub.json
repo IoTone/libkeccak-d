@@ -13,8 +13,9 @@
 		"-L.",
 		"-lkeccak-tiny"
 	],
-	"lflags-linux" : [
-		"-llibkeccak-tiny"
+	"lflags-linux-x86_64" : [
+		"-L.",
+		"-lkeccak-tiny"
 	],
 	"lflags-windows-x86_64": [
 		"-llibkeccak-tiny"
