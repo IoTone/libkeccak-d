@@ -19,7 +19,7 @@ From a posix compliant shell, run sh setup-deps.sh to grab and build keccak-tiny
 
 ### Windows Notes
 
-Since we don't provide a VS build or a fancy cmake build (that might be a good idea in the future), it is recommended that you use a POSIX shell like a ConEMU or similar to build.  This implies that you will have a Clang or gccc installed as well.  Install it before you get started.
+Since we don't provide a VS build or a fancy cmake build (that might be a good idea in the future), it is recommended that you use a POSIX shell like a ConEMU or similar to build.  This implies that you will have a Clang or gcc installed as well.  Install it before you get started.
 
 On windows you may need to rename your library to keccak-tiny.lib.
 
